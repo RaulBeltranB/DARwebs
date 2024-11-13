@@ -1,19 +1,50 @@
 <!DOCTYPE html>
 <html lang="es">
+  <!-- Inico Cabecera donde especificamos titulo y referencias-->
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Comida asiática mola</title>
-  <!-- Enlace al archivo CSS externo -->
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/styles.css"> 
-
+    <link rel="stylesheet" href="css/styles.css"> 
 </head>
+<!-- Fin  Cabecera-->
+
+<!-- Inicio Cabecera donde ponemos la barra de navegación-->
+<header>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Blog Comida Japonesa</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#inicio">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#recientes">Entradas Recientes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#categorias">Categorías</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <header id="inicio" class="bg-primary text-white text-center py-5">
+    <h1>Bienvenido al Blog de Comida Japonesa</h1>
+    <div class="container my-4">
+      <input type="text" class="form-control" placeholder="Buscar recetas, ingredientes, o más...">
+    </div>
+  </header>
+<!--Fin Cabecera-->
+
+<!-- Inico Body-->
 <body>
   <div class="container">
-    <h1>Blog de comida asiática</h1>
-
-    <!-- Entrada 1 -->
+    <!-- Inico Entradas-->
     <div class="blog-entry">
       <img src="img/pexels-chevanon-359992.jpg">
       <div class="blog-content">
@@ -24,7 +55,7 @@
       </div>
     </div>
 
-    <!-- Entrada 2 -->
+    
     <div class="blog-entry">
       <img src="img/pexels-chevanon-359993.jpg">
       <div class="blog-content">
@@ -35,7 +66,7 @@
       </div>
     </div>
 
-    <!-- Entrada 3 -->
+    
     <div class="blog-entry">
       <img src="img/pexels-huy-phan-316220-1422384.jpg">
       <div class="blog-content">
@@ -46,7 +77,7 @@
       </div>
     </div>
 
-    <!-- Entrada 4 -->
+    
     <div class="blog-entry">
       <img src="img/pexels-pixabay-357756.jpg">
       <div class="blog-content">
@@ -57,7 +88,7 @@
       </div>
     </div>
 
-    <!-- Entrada 5 -->
+    
     <div class="blog-entry">
       <img src="img/pexels-rajesh-tp-749235-2098085.jpg">
       <div class="blog-content">
@@ -68,11 +99,23 @@
       </div>
     </div>
   </div>
-
+<!-- Fin Entradas-->
   <script src="js/bootstrap.bundle.min.js"></script>
   
 </body>
+<!-- Fin Body-->
+
+<!--Inicio pie donde ponemos las categorias-->
 <footer>
+  <section id="categorias" class="container my-5">
+    <h2 class="text-center">Categorías</h2>
+    <div class="d-flex justify-content-around">
+      <a href="#" class="btn btn-outline-primary">Sushi</a>
+      <a href="#" class="btn btn-outline-primary">Nigiris</a>
+      <a href="#" class="btn btn-outline-primary">Makis</a>
+    </div>
+  </section>
   2024&copy Blog Comida Asiática UNIR.
 </footer>
+<!--Fin pie-->
 </html>
