@@ -1,4 +1,138 @@
+* <style>
+/* Reset y estilos base */
 * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Encabezados */
+h1, h2, h3 {
+    color: #1976d2;
+    margin: 1.5em 0 0.8em 0;
+}
+
+h1 {
+    font-size: 2.5em;
+    text-align: center;
+    border-bottom: 3px solid #1976d2;
+    padding-bottom: 0.5em;
+}
+
+h2 {
+    font-size: 2em;
+    border-bottom: 2px solid #1976d2;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+/* Estilos para el índice */
+.index {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  width: 250px;
+  font-family: Arial, sans-serif;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.index h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #333;
+}
+
+.index ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.index ul ul {
+  margin-left: 1rem;
+}
+
+.index li {
+  margin-bottom: 0.5rem;
+}
+
+.index a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+}
+
+.index a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+/* Contenido */
+p {
+    margin-bottom: 1em;
+}
+
+ul, ol {
+    margin: 1em 0;
+    padding-left: 2em;
+}
+
+li {
+    margin-bottom: 0.5em;
+}
+
+/* Imágenes */
+.tutorial-image {
+    max-width: 100%;
+    height: auto;
+    margin: 1.5em 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Bloques de código */
+.code-block {
+    background-color: #f5f5f5;
+    padding: 1em;
+    border-radius: 4px;
+    border-left: 4px solid #1976d2;
+    margin: 1em 0;
+    font-family: 'Consolas', monospace;
+    overflow-x: auto;
+}
+
+/* Secciones */
+.section {
+    margin: 2em 0;
+    padding: 1em;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Destacados */
+.highlight {
+    background-color: #e3f2fd;
+    padding: 1em;
+    border-radius: 4px;
+    margin: 1em 0;
+}
+</style>
+{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
