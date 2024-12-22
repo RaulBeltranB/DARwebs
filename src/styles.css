@@ -36,7 +36,7 @@ h2 {
 h3 {
     font-size: 1.5em;
 }
-/* Estilos para el índice */
+/* Estilos para el índice en pantallas grandes */
 .index {
   position: fixed;
   top: 20px;
@@ -48,6 +48,7 @@ h3 {
   width: 250px;
   font-family: Arial, sans-serif;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
 }
 
 .index h2 {
@@ -80,6 +81,40 @@ h3 {
   color: #0056b3;
   text-decoration: underline;
 }
+
+/* Estilos Responsivos para Pantallas Pequeñas */
+@media (max-width: 768px) {
+  .index {
+    position: static;
+    width: 100%;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    background-color: #f0f0f0;
+    padding: 0.5rem;
+  }
+
+  .index h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .index ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .index li {
+    margin: 0.5rem;
+  }
+
+  .index a {
+    font-size: 0.9rem;
+  }
+}
+
 /* Contenido */
 p {
     margin-bottom: 1em;
